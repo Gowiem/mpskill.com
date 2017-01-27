@@ -1,11 +1,6 @@
 # humanstxt.org/
-# The humans responsible & technology colophon
+# The humans responsible
 
 # TEAM
 
-    # TODO
-
-# TECHNOLOGY COLOPHON
-
-    HTML5, CSS3
-    jQuery, Modernizr
+    Matt Gowie -- Founder/Principal @ Masterpoint.io -- @Gowiem

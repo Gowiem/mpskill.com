@@ -1,6 +1,6 @@
 FROM nginx
 
-MAINTAINER TODO
+MAINTAINER Matt Gowie
 
 RUN rm /etc/nginx/conf.d/default.conf
 
