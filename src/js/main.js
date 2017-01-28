@@ -6,7 +6,7 @@ $('document').ready(function() {
         url;
 
     if (userEmail !== null && userEmail !== "") {
-      url = 'http://mpskill.com:4567/start_pair?email=' + encodeURIComponent(userEmail);
+      url = 'https://mpskill.com:4567/start_pair?email=' + encodeURIComponent(userEmail);
       $.post(url, function(data) {
         $('.pairing-id-1').html(data['pairing_id']);
         $('.pairing-id-2').html(data['pairing_id']);
