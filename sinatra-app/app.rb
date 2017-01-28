@@ -1,4 +1,3 @@
-#!/bin/ruby
 require 'sinatra'
 require 'redis'
 require 'json'
