@@ -49,13 +49,15 @@
     #############
 
     - name: Update code
-      git: repo=https://github.com/Gowiem/mpskill.com dest=~/www
+      git: repo=https://github.com/Gowiem/mpskill.com.git dest=~/www
 
     # Setup Let's Encrypt
     ######################
 
     - name: Generate dhparam.pem
       command: openssl dhparam -out ~/www/ssl/dhparam.pem 2048
+      args:
+        creates: "~/www/ssl/dhparam.pem"
 
     - name: Initial Let's Encrypt Setup
       command: letsencrypt certonly --standalone -d mpskill.com -d www.mpskill.com
