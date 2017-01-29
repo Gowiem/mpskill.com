@@ -10,5 +10,3 @@ website:
 sinatra_app:
   container_name: sinatra_app
   build: ./sinatra-app/
-  ports:
-    - 5000:4567
