@@ -21,6 +21,8 @@ post '/start_pair' do
 
   redis.set("pairing_#{pairing_id}", email)
 
+  response.headers['Access-Control-Allow-Origin'] = 'https://mpskill.com'
+
   content_type :json
   { pairing_id: pairing_id }.to_json
 end
