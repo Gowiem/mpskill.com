@@ -6,6 +6,7 @@ website:
   links:
     - sinatra_app
 sinatra_app:
+  container_name: sinatra_app
   build: ./sinatra-app/
   ports:
     - 4567:4567
