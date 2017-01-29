@@ -2,6 +2,8 @@ require 'sinatra'
 require 'redis'
 require 'json'
 
+set :bind, '0.0.0.0'
+
 redis = Redis.new(host: 'mountain-proj.5vy0kj.0001.use1.cache.amazonaws.com',
                   port: 6379)
 
