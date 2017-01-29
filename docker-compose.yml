@@ -3,6 +3,8 @@ website:
   ports:
     - 80:80
     - 443:443
+  links:
+    - sinatra_app
 sinatra_app:
   build: ./sinatra-app/
   ports:
