@@ -4,7 +4,7 @@ require 'json'
 
 set :bind, '0.0.0.0'
 
-redis = Redis.new(host: 'mountain-proj.5vy0kj.0001.use1.cache.amazonaws.com',
+redis = Redis.new(host: 'redis.mpskill.com',
                   port: 6379)
 
 get '/' do
