@@ -5,6 +5,11 @@ require 'json'
 redis = Redis.new(host: 'mountain-proj.5vy0kj.0001.use1.cache.amazonaws.com',
                   port: 6379)
 
+get '/' do
+  content_type :json
+  { status: 'up' }.to_json
+end
+
 # - Invoked from the submission of website form. Has user's email as input.
 # - Generates 4 character pairing ID.
 # - Creates the Pairing ID => User email key for the finalize intent.
