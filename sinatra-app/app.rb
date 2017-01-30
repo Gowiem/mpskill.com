@@ -19,7 +19,9 @@ post '/start_pair' do
   email = params['email']
   pairing_id = 4.times.map { rand(10) }.join
 
-  redis.set("pairing_#{pairing_id}", email)
+  key = "pairing_#{pairing_id}"
+  redis.set(key, email)
+  redis.expire(key, 600) # 10 minute ttl
 
   response.headers['Access-Control-Allow-Origin'] = 'https://mpskill.com'
 
