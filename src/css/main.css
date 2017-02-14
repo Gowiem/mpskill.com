@@ -78,29 +78,6 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: initial;
 }
-/*.content:before, .content:after {
-  background: inherit;
-  content: '';
-  display: block;
-  height: 50%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  z-index: -1;
-  -webkit-backface-visibility: hidden; // for Chrome Windows
-}
-
-.content:before {
-  top: 0;
-  transform: skewY(1.5deg);
-  transform-origin: 100% 0;
-}
-
-.content:after {
-  bottom: 0;
-  transform: skewY(-1.5deg);
-  transform-origin: 100%;
-}*/
 
 .content h1 {
   font-family: 'Lato';
@@ -123,9 +100,11 @@ body {
    Media Queries
    ========================================================================== */
 
-@media only screen and (max-width: 480px) {}
-
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+  .main-img {
+    background-image: url(../img/san-diego-crop.jpg);
+  }
+}
 
 @media only screen and (max-width: 1140px) {}
 
