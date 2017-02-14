@@ -7,12 +7,11 @@ $('document').ready(function() {
 
     if (userEmail !== null && userEmail !== "") {
       url = 'https://mpskill.com:5000/start_pair?email=' + encodeURIComponent(userEmail);
-      // $.post(url, function(data) {
-      var data = { pairing_id: 1234 }
+      $.post(url, function(data) {
         $('.pairing-id-1').html(data['pairing_id']);
         $('.pairing-step').show();
         $('.input-step').hide();
-      // });
+      });
     }
   });
 });
