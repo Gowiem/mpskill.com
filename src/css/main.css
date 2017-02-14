@@ -24,6 +24,100 @@ body {
     text-align: center;
 }
 
+.full-screen-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+.main-img {
+  background: url(../img/screaming-yellow.jpg) center center no-repeat;
+  background-size: cover;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.wrapper {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  resize: both;
+}
+
+.content {
+  position: relative;
+  color: #fff;
+  padding: 35px 35px;
+  resize: both;
+  z-index: 1;
+  text-align: center;
+  width: 400px;
+}
+
+.content .skew:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(65, 76, 94, 0.6);
+  z-index: -1;
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+}
+/*.content:before, .content:after {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden; // for Chrome Windows
+}
+
+.content:before {
+  top: 0;
+  transform: skewY(1.5deg);
+  transform-origin: 100% 0;
+}
+
+.content:after {
+  bottom: 0;
+  transform: skewY(-1.5deg);
+  transform-origin: 100%;
+}*/
+
+.content h1 {
+  font-family: 'Lato';
+  font-style: italic;
+  color: #f1c100;
+  margin-top: 0;
+}
+
+.content .email-input {
+  color: black;
+  width: 80%;
+}
+
+.content .pair-submit {
+  margin-top: 20px;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */

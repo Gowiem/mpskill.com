@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/forms-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/buttons-min.css">
+    <link href="//fonts.googleapis.com/css?family=Lato" type="text/css" rel="stylesheet">
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -31,18 +34,24 @@
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <div class="full-screen-img main-img"></div>
+    <main class="wrapper">
+      <div class="content">
+        <div class="skew">
+          <h1>MOUNTAIN PROJECT ALEXA SKILL</h1>
+          <div class='input-step pure-form'>
+            <p>Enter your email to pair your Mountain Project stats with your Alexa.</p>
+            <input class='email-input' type='email' placeholder='Email' />
+            <div>
+              <button class="pair-submit pure-button pure-button-primary">Pair</button>
+            </div>
+          </div>
 
-    <main>
-      <h1>Mountain Project Alexa Skill</h1>
-
-      <div class='input-step'>
-        <input class='email-input' type='email' required=true />
-        <button class='pair-submit'>Pair</button>
-      </div>
-
-      <div class='pairing-step'>
-        <div class='pairing-id-1'></div>
-        <p>"Alexa, Mountain Project pair <span class='pairing-id-2'></span>."</p>
+          <div class='pairing-step'>
+            <p>Tell Alexa:</p>
+            <p>"Alexa, ask Mountain Project to pair <span class='pairing-id-1'></span>."</p>
+          </div>
+        </div>
       </div>
     </main>
   </body>
