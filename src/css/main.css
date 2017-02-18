@@ -53,7 +53,7 @@ body {
 .content {
   position: relative;
   color: #fff;
-  padding: 35px 35px;
+  padding: 35px 35px 10px 35px;
   resize: both;
   z-index: 1;
   text-align: center;
@@ -94,6 +94,21 @@ body {
 
 .content .pair-submit {
   margin-top: 20px;
+}
+
+.built-by {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 15px;
+}
+.built-by a:visited {
+  color: #fff;
+}
+.built-by a:hover {
+  color: #fff;
+}
+.built-by a:active {
+  color: #fff;
 }
 
 /* ==========================================================================
