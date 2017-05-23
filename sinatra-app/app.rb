@@ -15,7 +15,8 @@ end
 # - Invoked from the submission of website form. Has user's email as input.
 # - Generates 4 character pairing ID.
 # - Creates the Pairing ID => User email key for the finalize intent.
-post '/start_pair' do
+# NOTE: GET action due to a bug in Window/IE that I don't have the time or patience to deal with.
+get '/start_pair' do
   email = params['email']
   pairing_id = 4.times.map { rand(10) }.join
 
