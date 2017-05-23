@@ -3,6 +3,7 @@ require 'redis'
 require 'json'
 
 set :bind, '0.0.0.0'
+set :protection, :except => [:json_csrf]
 
 redis = Redis.new(host: 'redis.mpskill.com',
                   port: 6379)
